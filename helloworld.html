@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsContextMenu</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/contextmenu.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/contextmenu.js"></script>
+  </head>
+  <body onLoad="ContextMenu.init('svgmenu')">
+    <h1>jsContextMenu Test</h1>
+    <h2>Right Click Anywhere!</h2>
+	<div id="svgmenu" style="z-index:999"></div>
+	<script>
+		document.onmousedown = function(e){  
+			var e = e || window.event;
+		
+			if(e.button == "2"){  
+				var string = "<ul><li class=\"include\" onclick=\"about()\">about<ul><li>Sub Menu</li><ul></li></ul>";
+				//动态设置菜单，在激活菜单显示之前设置。
+				ContextMenu.setContextMenu(string);
+				// 激活菜单显示
+				ContextMenu.showContextmenu(e);
+			}  
+		}  
+
+		function about()
+		{
+			alert('enjoy');
+		}
+	</script>
+  </body>
+</html>
+

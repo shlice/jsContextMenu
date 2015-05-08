@@ -1,0 +1,13 @@
+/* @author: shild 2012/11 */
+/* 3.0 support auto ajust shild 2014/11 */
+#svgmenu {position:absolute; font-size:12px;}
+#svgmenu ul {width:150px; padding:1px; margin:0px; list-style:none; border:1px solid #CCC; background-color:white;}
+#svgmenu ul ul {position:absolute; visibility:hidden; right:-150px; top:-2px;}
+#svgmenu li {position:relative; padding:3px 20px; cursor:pointer; height:15px; }
+#svgmenu li.include {background-image:url(../image/triangle-right.png); background-repeat:no-repeat; 
+	background-position:135px 50%;}
+#svgmenu li:hover {background-color:#CCC;}
+#svgmenu li:hover.include{background-image:url(../image/triangle-right-w.png);}
+#svgmenu li:hover ul {visibility:visible;}
+#svgmenu li:hover ul ul {visibility:hidden;}
+#svgmenu li:hover li:hover ul {visibility:visible;}
