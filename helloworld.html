@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
   <head>
     <title>jsContextMenu</title>
@@ -14,16 +14,16 @@
 		document.onmousedown = function(e){  
 			var e = e || window.event;
 		
-			if(e.button == "2"){  
-				var string = "<ul><li class=\"include\" onclick=\"about()\">about<ul><li>Sub Menu</li><ul></li></ul>";
-				//¶¯Ì¬ÉèÖÃ²Ëµ¥£¬ÔÚ¼¤»î²Ëµ¥ÏÔÊ¾Ö®Ç°ÉèÖÃ¡£
+			if(e.button == 2){  
+				var string = "<ul><li class=\"include\">Menu<ul><li onclick=\"msg()\">Sub Menu1</li><li>Sub Menu2</li></ul></li></ul>";
+				//åŠ¨æ€è®¾ç½®èœå•ï¼Œåœ¨æ¿€æ´»èœå•æ˜¾ç¤ºä¹‹å‰è®¾ç½®ã€‚
 				ContextMenu.setContextMenu(string);
-				// ¼¤»î²Ëµ¥ÏÔÊ¾
+				// æ¿€æ´»èœå•æ˜¾ç¤º
 				ContextMenu.showContextmenu(e);
 			}  
 		}  
 
-		function about()
+		function msg()
 		{
 			alert('enjoy');
 		}
