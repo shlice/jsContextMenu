@@ -7,7 +7,7 @@ Demo：
 	运行helloworld.html
 	 
 使用方法： 
-一、引用js和css文件。
+一、引用js和css文件
 <link rel="stylesheet" type="text/css" href="resources/css/contextmenu.css" />
 <script type="text/javascript" src="js/contextmenu.js"></script>
 
